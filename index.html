@@ -42,10 +42,45 @@
     </header>
 
     <!--Menu Container-->
-    <div class="container-fluid bg-black text-white py-5">
-        <div>
-            <h1></h1>
+    <div class="container-fluid bg-black text-white py-5 display-4" id="menu">
+        <div class="container">
+            <h1 class="text-center display-2 mb-5">THE MENU</h1>
+            <div class="text-center border border-dark">
+                <div class="d-flex">
+                    <a href="" onclick="openMenu(event, 'Pizza');" class="col-4 tablink p-3 hover-red" id="mainLink">Pizza</a>
+                    <a href="" onclick="openMenu(event, 'Pasta');"  class="col-4 tablink p-3 hover-red">Pasta</a>
+                    <a href="" onclick="openMenu(event, 'Starter');"  class="col-4 tablink p-3 hover-red">Starter</a>
+                </div>
+            </div>
+            <!--Pizza Menu-->
+            <div id="Pizza" class="container-fluid menu p-4 bg-white">
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Margerita</b></h1>
+                    <span class="badge bg-dark text-white">$12.50</span>
+                </div>
+                <p class="text-muted">Fresh Tomatoes, freash mozzerella, fresh basil</p>
+                <hr class="text-muted">
+            </div>
+            <!--Pasta Menu-->
+            <div id="Pasta" class="container-fluid menu p-4 bg-white">
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Lasagna</b></h1>
+                    <span class="badge bg-dark text-white">$13.50</span>
+                </div>
+                <p class="text-muted">Special sauce, freash mozzerella, parmesan, ground beef</p>
+                <hr class="text-muted">
+            </div>
+            <!--Starter Menu-->
+            <div id="Starter" class="container-fluid menu p-4 bg-white">
+                <div class="d-flex justify-content-between align-items baseline">
+                    <h1 class="mb-0 display-3"><b>Today's Soup</b><span class="badge bg-dark text-white">Seasonal</span></h1>
+                    <span class="badge bg-dark text-white">$5.50</span>
+                </div>
+                <p class="text-muted">Ask waiter for details</p>
+                <hr class="text-muted">
+            </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
