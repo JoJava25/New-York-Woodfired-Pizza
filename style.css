@@ -45,3 +45,63 @@ body,h1,h2,h3,h4,h5,h6 {
 .btn {
     min-width: 250px;
 }
+
+.btn.hover-btn:hover {
+    background-color: lightgrey;
+    color: black;
+    text-decoration: underline;
+}
+
+/*Custom styles for menu box*/
+
+.bg-black {
+    background-color: black;
+}
+
+.hover-red:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+}
+
+.active-tab {
+    background-color: red;
+    color: white;
+}
+
+.border-dark {
+    border-color: dark-grey;
+}
+
+.badge {
+    padding: .6em .8em;
+}
+
+.small-tag {
+    padding: .3em .3em;
+}
+
+.bg-red {
+    background-color: red;
+    color: white;
+}
+
+.bg-grey {
+    background-color: gray;
+}
+
+.menu h1 {
+    color: black;
+}
+
+.purpleText {
+    background-color: darkslateblue;
+}
+
+.interior {
+    width: 100%;
+}
+
+/*Grayscale*/
+.img-grayscale {
+    filter: grayscale(100%);
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New York Woodfired Pizza</title>
 <!--Google Font-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alumini+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alumni+Sans">
 <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- Custom CSS -->
@@ -47,9 +47,9 @@
             <h1 class="text-center display-2 mb-5">THE MENU</h1>
             <div class="text-center border border-dark">
                 <div class="d-flex">
-                    <a href="" onclick="openMenu(event, 'Pizza');" class="col-4 tablink p-3 hover-red" id="mainLink">Pizza</a>
-                    <a href="" onclick="openMenu(event, 'Pasta');"  class="col-4 tablink p-3 hover-red">Pasta</a>
-                    <a href="" onclick="openMenu(event, 'Starter');"  class="col-4 tablink p-3 hover-red">Starter</a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" class="col-4 tablink p-3 hover-red" id="mainLink">Pizza</a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');"  class="col-4 tablink p-3 hover-red">Pasta</a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');"  class="col-4 tablink p-3 hover-red">Starter</a>
                 </div>
             </div>
             <!--Pizza Menu-->
@@ -67,13 +67,13 @@
                     <h1 class="mb-0 display-3"><b>Lasagna</b></h1>
                     <span class="badge bg-dark text-white">$13.50</span>
                 </div>
-                <p class="text-muted">Special sauce, freash mozzerella, parmesan, ground beef</p>
+                <p class="text-muted">Special sauce, fresh mozzerella, parmesan, ground beef</p>
                 <hr class="text-muted">
             </div>
             <!--Starter Menu-->
             <div id="Starter" class="container-fluid menu p-4 bg-white">
                 <div class="d-flex justify-content-between align-items baseline">
-                    <h1 class="mb-0 display-3"><b>Today's Soup</b><span class="badge bg-dark text-white">Seasonal</span></h1>
+                    <h1 class="mb-0 display-3"><b>Today's Soup </b><span class="badge bg-dark text-white">Seasonal</span></h1>
                     <span class="badge bg-dark text-white">$5.50</span>
                 </div>
                 <p class="text-muted">Ask waiter for details</p>
@@ -81,6 +81,45 @@
             </div>
         </div>
     </div>
+
+<!--About Container-->
+    <div class="container-fluid py-5 text-white purpleText" id="about">
+        <div class="container">
+            <h1 class="text-center display-2 mb-3">ABOUT</h1>
+            <h1 class="display-4"><b>Opening Hours</b></h1>
+            <div class="row fs-2">
+                <div class="col-6">
+                    <p>Mon & Tue CLOSED</p>
+                    <p>Wednesday 9:00 am - 11:00 pm</p>
+                    <p>Thursday 9:00 am - 11:00 pm</p>
+                </div>
+                <div class="col-6">
+                    <p>Friday 9:00 am - 11:00 pm</p>
+                    <p>Saturday 9:00 am - 11:00 pm</p>
+                    <p>Sunday Closed</p>
+                </div>
+            
+            </div>
+        </div>
+        <div class="px-5">
+            <h1 class="display-4"><b>History</b></h1>
+            <p class="fs-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit deserunt, debitis molestiae vel soluta voluptatem officiis veritatis inventore provident, magnam dicta eaque. Molestiae dolorum quas quisquam at sequi maxime culpa! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates commodi cum quaerat dolores sunt rerum, corporis illum modi officia ea hic expedita, aperiam omnis laborum praesentium repellat veritatis ut! Saepe! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam maxime quo molestiae voluptatibus ipsam repellat incidunt aspernatur! Minus quibusdam eius, possimus, dolor exercitationem nemo suscipit debitis maxime quos vitae dignissimos.
+            </p>
+            <div class="row">
+                <div class="col-lg-9 col-med-8 col-sm-12">
+                    <p class="fs-2"><b>The Chef?</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum veniam facilis nemo qui porro! Tenetur rerum dicta, laudantium consequuntur maiores dolores adipisci, perspiciatis voluptates reprehenderit eius in, magni nihil?
+                    Non nesciunt quidem similique commodi provident accusantium reiciendis consequuntur perferendis, ipsum asperiores tempore error, nihil nisi quis distinctio officiis voluptatem culpa maxime consequatur, eius fuga inventore officia modi ducimus? Vel.
+                </div>
+                <div class="col-lg-3 col-med-4 col-sm-12 text-end">
+                    <img src="assets/chef.jpg" alt="chef" style="width:200px;" class="rounded-circle">
+                </div>
+                <p class="fs-2">We are proud of our stuff.</p>
+                <img src="assets/restaurant.jpg" alt="interior" class ="interior my-3 img-grayscale">
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
