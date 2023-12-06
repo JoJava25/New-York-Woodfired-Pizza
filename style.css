@@ -49,7 +49,6 @@ body,h1,h2,h3,h4,h5,h6 {
 .btn.hover-btn:hover {
     background-color: lightgrey;
     color: black;
-    text-decoration: underline;
 }
 
 /*Custom styles for menu box*/
@@ -68,8 +67,11 @@ body,h1,h2,h3,h4,h5,h6 {
     color: white;
 }
 
+.no-underline a{
+    text-decoration: none;
+}
 .border-dark {
-    border-color: dark-grey;
+    border-color: darkgray;
 }
 
 .badge {
