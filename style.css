@@ -105,3 +105,9 @@ body,h1,h2,h3,h4,h5,h6 {
 .img-grayscale {
     filter: grayscale(100%);
 }
+
+/*XL form boxes*/
+.extra-large {
+    height: 60px;
+    font-size: 1.8rem;
+  }
