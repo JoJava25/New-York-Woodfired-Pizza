@@ -11,3 +11,5 @@ app.use(express.json())
 app.use(cors())
 app.use(express.static('public'))
 
+//Connect to MongoDB
+mongoose.connect(process.env.MONGODB_URI)
