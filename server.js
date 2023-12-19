@@ -20,6 +20,21 @@ db.once('open', ()=> {
     console.log("Connected to MongoDB")
 })
 
+//Handle form submission request
+app.post('/submit', async (req, res) => {
+    const formData = {
+        name: req.body.Name,
+        people: req.body.People,
+        date: new Date(req.body.date),
+        message: req.body.Message
+    }
+    try{
+
+    } catch (error){
+        
+    }
+})
+
 //Start server
 const PORT = 8000
 app.listen(PORT, () => {
