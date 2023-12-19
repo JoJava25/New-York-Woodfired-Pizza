@@ -20,6 +20,16 @@ db.once('open', ()=> {
     console.log("Connected to MongoDB")
 })
 
+//Schema and model for form data
+const contactSchema = new mongoose.Schema({
+    name: String,
+    people: Number,
+    date: Date,
+    message: String
+})
+
+const Contact = mongoose.model("Contact", contactSchema)
+
 //Handle form submission request
 app.post('/submit', async (req, res) => {
     const formData = {
@@ -29,10 +39,16 @@ app.post('/submit', async (req, res) => {
         message: req.body.Message
     }
     try{
-
-    } catch (error){
-        
+        const newContact = new Contact(formData)
+        await newContact.save()
+        res.redirect('/?success')
+    } catch (err){
+        res.redirect('/?error')
     }
+})
+
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/public/index.html')
 })
 
 //Start server
