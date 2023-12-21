@@ -28,6 +28,7 @@ const contactSchema = new mongoose.Schema({
     message: String
 })
 
+
 const Contact = mongoose.model("Contact", contactSchema)
 
 //Handle form submission request
